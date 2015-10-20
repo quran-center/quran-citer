@@ -24,7 +24,7 @@
 <body>
   <section class="page-header">
     <h1 class="project-name">Quran-citer</h1>
-    <h2 class="project-tagline">Simple library for easy referencing of Quran ayahs</h2>
+    <h2 class="project-tagline">Simple library for easy referencing of Quran surahs-ayahs</h2>
     <a href="https://github.com/husayt/quran-citer" class="btn">View on GitHub</a>
     <a href="https://github.com/husayt/quran-citer/zipball/master" class="btn">Download .zip</a>
     <a href="https://github.com/husayt/quran-citer/tarball/master" class="btn">Download .tar.gz</a>
@@ -82,19 +82,25 @@
         путь, они не встанут на него, а завидев путь заблуждения, последуют им» <a>(сура 7 «Ограды», аят 146)</a></q>.</p>
 
     <p>If you want to use some other quran website use
-      <code>qlink</code> attribute. Example below will use tanzil.info project instead
+      <code>data-qlink</code> attribute. Example below will use tanzil.info project instead
       of default recitequran.com</p>
 
-    <blockquote class="qrn" qlink="tanzil">
+    <blockquote class="qrn" data-qlink="tanzil">
       Thereby He causes many to go astray, and thereby He guides many; but thereby He causes
       none to go astray save the iniquitous} <a>(Al-Baqarah 2:26)</a>
     </blockquote>
 
-    <p>Currently, these values are for qlink parameter supported</p>
+    <p>Currently, these values are for <code>data-qlink</code> parameter supported</p>
 
     <ul>
       <li>
         <code>rq</code> : <a href="http://www.recitequran.com">http://www.recitequran.com</a>
+      </li>
+      <li>
+        <code>rqru</code> : <a href="http://www.recitequran.com">http://www.recitequran.com russian - Эльмир Кулиев</a>
+      </li>
+      <li>
+        <code>rqaz</code> : <a href="http://www.recitequran.com">http://www.recitequran.com azerbaijani</a>
       </li>
       <li>
         <code>tanzil</code>: <a href="http://tanzil.net">http://tanzil.net</a>
@@ -109,7 +115,17 @@
         <code>qf</code>: <a href="http://www.quranflash.com/verse">http://www.quranflash.com/verse</a>
       </li>
       <li>
-        <code>rqs</code>: Special inline mode (see below)
+        <code>quraz1</code>: <a href="http://quran.az">http://quran.az - Əlixan Musayev</a>
+      </li>
+      <li>
+        <code>quraz2</code>: <a href="http://quran.az">http://quran.az - Bünyadov-Məmmədəliyev</a>
+      </li>
+      <li>
+        <code>quraz3</code>: <a href="http://quran.az">http://quran.az - Эльмир Кулиев</a>
+      </li>
+
+      <li>
+        <code>rqs</code>: Special inline mode for recitequran.com (see below)
       </li>
     </ul>
 
@@ -117,7 +133,7 @@
 
 
     Всевышний Аллах сказал:
-    <blockquote class="qrn" qlink="rqs"> «Возвести людям о хадже, и они будут прибывать к тебе пешком и на всех поджарых
+    <blockquote class="qrn" data-qlink="rqs"> «Возвести людям о хадже, и они будут прибывать к тебе пешком и на всех поджарых
       верблюдах с самых отдалённых дорог. Пусть они застанут то, что приносит им
       пользу [в том числе прощение грехов и награду от Всевышнего], и поминают имя
       Аллаха в установленные дни над [жертвенной] скотиной, которой Он наделил их.
