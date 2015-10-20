@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="ru" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#"
 itemscope itemtype="http://schema.org/WebPage">
-
+<link rel="stylesheet" type="text/css" href="stylesheets/quran-citer.css" media="screen">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -17,7 +17,7 @@ itemscope itemtype="http://schema.org/WebPage">
       /*! display: inherit;
      background-color:yellow;*/
     }
-    	
+
 		.black_overlay{
 			display: none;
 			position: absolute;
@@ -44,7 +44,7 @@ itemscope itemtype="http://schema.org/WebPage">
 			z-index:1002;
 			overflow: hidden;
 		}
-	
+
   </style>
 </head>
 
@@ -67,65 +67,23 @@ itemscope itemtype="http://schema.org/WebPage">
     <a href="#" onclick="putScriptInIframes('25','7')" >Open example.com in an iframe</a>
   </blockquote>
 
- 
+
  Всевышний Аллах сказал:
-   <blockquote class="qrn" qlink="rqs"> «Возвести людям о хадже, и они будут прибывать к тебе пешком 
-   и на всех поджарых верблюдах с самых отдалённых дорог. Пусть они застанут то, что приносит им пользу 
+   <blockquote class="qrn" qlink="rqs"> «Возвести людям о хадже, и они будут прибывать к тебе пешком
+   и на всех поджарых верблюдах с самых отдалённых дорог. Пусть они застанут то, что приносит им пользу
    [в том числе прощение грехов и награду от Всевышнего], и поминают имя Аллаха в установленные дни над
    [жертвенной] скотиной, которой Он наделил их. Ешьте от них и кормите несчастного бедняка! Затем пусть
-   [паломники] завершат свои обряды, исполнят свои обеты и обойдут вокруг древнего Дома. Вот так! Кто 
-   почитает святыни Аллаха, тот поступает во благо себе перед своим Господом»    
+   [паломники] завершат свои обряды, исполнят свои обеты и обойдут вокруг древнего Дома. Вот так! Кто
+   почитает святыни Аллаха, тот поступает во благо себе перед своим Господом»
     <a>(сура 22 «Хадж», аяты 27-30).</a></blockquote>
-	
-	
- 
+
+
+
   hello
   <q class="qrn">And We will provide them with fruit and meat from whatever they desire <a>(Al-Baqarah 2:26)</a>.</q>
   zxcz lczl xcn
 </body>
 <script src="quran-citer.js"></script>
-<script>
-function closeDiv(){
-var div=document.getElementById('light');
-div.style.display='none';
-document.getElementById('fade').style.display='none';
-var qf=document.getElementById("qframe");
-div.removeChild(qf)
-}
 
-  var div1 =document.createElement('div');
-  div1.id="light"
-  div1.className ="white_content"
-  document.body.appendChild(div1);  
-
-var div2 =document.createElement('div');
-  div2.id="fade"
-  div2.className ="black_overlay"
-  div2.onclick=closeDiv;
-document.body.appendChild(div2);
- var divhtml='<div id="light" class="white_content"><a href = "javascript:void(0)" onclick = "closeDiv()"></a></div><div id="fade" class="black_overlay" onclick = "closeDiv()"></div>';
-
-
-
-function putScriptInIframes(sid, aid) {
-var scriptUrl='http://www.recitequran.com/embed.php?ColorText=1&wpx=560&Translations=VRussian&Ch='+sid+'&SV='+aid+'&EV='+aid;
-   
-     var frame =document.createElement('iframe');
-    var html = '<body style="margin:0px;padding:0px;"><script src="'+scriptUrl+'" ><\/script></body>';
-	frame.id="qframe";
-	frame.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
-frame.width="100%";
-frame.height="100%";
-frame.padding=0;
-frame.border=0;
-frame.style="overflow:hidden;height:100%;width:100%";
-frame.frameborder=0;
-		var div=document.getElementById("light");
-		div.appendChild(frame)
-   		document.getElementById('light').style.display='block';
-		document.getElementById('fade').style.display='block';
-}
-</script>
 
 </html>
-
