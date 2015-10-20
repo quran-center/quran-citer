@@ -22,22 +22,63 @@
       <h1>
 <a id="quran-citer" class="anchor" href="#quran-citer" aria-hidden="true"><span class="octicon octicon-link"></span></a>quran-citer</h1>
 
-<p>This project allows to easily create  simple quran links.</p>
+<p>This project allows to easily create simple links to Quran ayas on popular Quran websites.</p>
 
-<p>Just add any Quran surah either in <code>blockquote</code> or <code>q</code> tags.</p>
+<p>Usage is very simple :
+First, add this line to the bottom of your page</p>
 
-<pre><code>&lt;blockquote qlink="tanzil"&gt;
+<pre><code>&lt;script src="quran-citer.js" &gt;&lt;/script&gt;
+</code></pre>
+
+<p>Then, just add any Quran surah either in <code>blockquote</code> or <code>q</code> tags.</p>
+
+<p>For example, for block mode quote use</p>
+
+<pre><code>&lt;blockquote class="qrn"&gt;
   Thereby He causes many to go astray, and thereby He guides many; but thereby He
   causes none to go astray save the iniquitous} &lt;a&gt;(Al-Baqarah 2:26)&lt;/a&gt;
 &lt;/blockquote&gt;
 </code></pre>
 
-<p>if you want to use some other quran website use <code>qlink</code> attribute</p>
+<blockquote>
+  Thereby He causes many to go astray, and thereby He guides many; but thereby He
+  causes none to go astray save the iniquitous} (Al-Baqarah 2:26)
+</blockquote>
+
+<p>or for inline</p>
+
+<pre><code>Всевышний сказал:
+&lt;q class="qrn"&gt; «Я отвращу от Моих знамений тех, которые возгордились на земле без всякого права на то. Какое бы знамение они ни увидели, они не уверуют. Увидев правый путь, они не встанут на него, а завидев путь заблуждения, последуют им» &lt;a&gt;(сура 7 «Ограды», аят 146)&lt;/a&gt;.&lt;/q&gt;
+</code></pre>
+
+<p>Всевышний сказал: <q>«Я отвращу от Моих знамений тех, которые возгордились на земле без всякого права на то. Какое бы знамение они ни увидели, они не уверуют. Увидев правый путь, они не встанут на него, а завидев путь заблуждения, последуют им» (сура 7 «Ограды», аят 146)</q>.</p>
+
+<p>if you want to use some other quran website use <code>qlink</code> attribute.</p>
 
 <blockquote>
   Thereby He causes many to go astray, and thereby He guides many; but thereby He
   causes none to go astray save the iniquitous} (Al-Baqarah 2:26)
 </blockquote>
+
+<p>Currently, these parameters supported</p>
+
+<ul>
+<li>
+<code>rq</code> : <a href="http://www.recitequran.com">http://www.recitequran.com</a>
+</li>
+<li>
+<code>tanzil</code>: <a href="http://tanzil.net">http://tanzil.net</a>
+</li>
+<li>
+<code>quran</code>: <a href="http://quran.com">http://quran.com</a>
+</li>
+<li>
+<code>qi</code>: <a href="http://al-quran.info">http://al-quran.info</a>
+</li>
+<li>
+<code>qf</code>: <a href="http://www.quranflash.com/verse">http://www.quranflash.com/verse</a>
+</li>
+</ul>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/husayt/quran-citer">Quran-citer</a> is maintained by <a href="https://github.com/husayt">husayt</a>.</span>
