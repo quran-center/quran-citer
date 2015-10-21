@@ -33,11 +33,16 @@
     var
       linkFormats = {
         "rq": ["http://www.recitequran.com/", ":", ""],
+        "rqru": ["http://www.recitequran.com/ru/", ":", ""],
+        "rqaz": ["http://www.recitequran.com/az/", ":", ""],
         "rqs": [null, "", ""],
         "tanzil": ["http://tanzil.net/#", ":", ""],
         "quran": ["http://quran.com/", "?", ""],
         "qi": ["http://al-quran.info/#", ":", ""],
         "qf": ["http://www.quranflash.com/verse/", "/", ""],
+        "quraz1": ["http://quran.az/5", "/", "/t:3"],
+        "quraz2": ["http://quran.az/5", "/", "/t:2"],
+        "quraz3": ["http://quran.az/5", "/", "/t:3"],
 
       },
       x = document.getElementsByClassName("qrn"),
@@ -46,7 +51,7 @@
       var y = x[i];
       //y.style.backgroundColor = "yellow";
       var links = y.getElementsByTagName("a"),
-        linkFormat = linkFormats[y.getAttribute("qlink") || style];
+        linkFormat = linkFormats[y.getAttribute("data-qlink") || style];
 
       if (links.length > 0) {
         var link = links[links.length - 1];

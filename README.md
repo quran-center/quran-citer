@@ -1,10 +1,14 @@
 # quran-citer
-
+see more here http://husayt.github.io/quran-citer
 
 This project allows to easily create simple links to Quran ayas on popular Quran websites.
 
 Usage is very simple :
-First, add this line to the bottom of your page
+First, add this line to the `<head>` area  of your page 
+```
+<link rel="stylesheet" type="text/css" href="quran-citer.css">
+```
+and this to the bottom 
 ```
 <script src="quran-citer.js" ></script>
 ```
