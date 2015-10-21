@@ -12,7 +12,7 @@
     var scriptUrl = 'http://www.recitequran.com/embed.php?ColorText=1&wpx=560&Translations=VRussian&Ch=' + sid + '&SV=' + aid + '&EV=' + (eid || aid);
 
     var frame = document.createElement('iframe');
-    var html = '<body style="margin:0px;padding:0px;"><script src="' + scriptUrl + '" ><\/script></body>';
+    var html = '<style>body > div{width:100% !important;border-right:10px !important;}</style><body style="margin:0px;padding:0px;"><script src="' + scriptUrl + '" ><\/script></body>';
     frame.id = "qframe";
     frame.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
     frame.width = "100%";
