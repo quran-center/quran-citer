@@ -1,0 +1,84 @@
+/* Styles Loading Fonts */
+.wf-loading h1
+.wf-loading h2, 
+.wf-loading h3,
+.wf-loading h4, 
+.wf-loading h5,
+.wf-loading h6,
+.wf-loading #topline .site-title,
+.wf-loading .nav li a,
+.wf-loading .nav-tabs li {
+	visibility: hidden;
+	font-size: 12px !important;
+}
+
+.wf-loading  h2,
+.wf-inactive h2 { font-size: 17px !important; }
+
+.wf-loading  h3,
+.wf-inactive h3 { font-size: 15px !important; }
+
+.wf-loading  h5,
+.wf-inactive h5 { font-size: 13px !important; }
+
+.wf-loading  #tabnav li a,
+.wf-inactive #tabnav li a { font-size: 11px !important; }
+
+.wf-loading  .nav li a,
+.wf-inactive .nav li a { font-size: 15px !important; }
+
+/* Styles Active Font */
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active h5,
+.wf-active h6,
+.wf-active .nav li a,
+.wf-active .nav-tabs li {
+	visibility: visible;
+	display: block;
+}
+
+@media(max-width:767px) {
+	.wf-active #topline .site-title {
+		visibility: visible;
+		display: block;
+	}
+}
+
+
+/* 
+ * Scheherazade (Arabic) http://www.google.com/webfonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Scheherazade';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://assets.elmirguliyev.com/ttf/ScheherazadeRegOT.eot');
+  src: url('http://assets.elmirguliyev.com/ttf/ScheherazadeRegOT.eot?#iefix') format('embedded-opentype'),
+       url('http://assets.elmirguliyev.com/ttf/ScheherazadeRegOT.woff') format('woff'),
+       url('http://assets.elmirguliyev.com/ttf/ScheherazadeRegOT.ttf') format('truetype');
+}
+
+
+/*
+* Google Custom Search
+*/
+.gsc-control-cse {
+	padding: 0 !important;
+	background: none !important;
+	border: 0 !important;
+}
+.gsc-above-wrapper-area,
+.gcsc-branding 			  { display: none !important; }
+.gsc-webResult.gsc-result {
+	background: none !important;
+	border: 0 !important;
+}
+.gsc-table-result 	 	   { padding: 0 !important; }
+.gsc-table-result td	   { padding: 0 8px !important; }
+.gsc-webResult .gsc-result {
+	padding: 20px 0 !important;
+	border-bottom: 1px solid #eaeae2 !important;
+}

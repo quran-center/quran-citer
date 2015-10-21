@@ -2,6 +2,15 @@
   color: green;
   text-emphasis-style: dot;
   font-style: italic;
+  font-weight: bold;
+  /*! display: inherit;
+ background-color:yellow;*/
+}
+
+.qrn a {
+  color: darkred;
+  font-style: normal;
+  font-weight: normal;
   /*! display: inherit;
  background-color:yellow;*/
 }
