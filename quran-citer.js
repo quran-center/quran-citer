@@ -3,8 +3,8 @@
     var div = document.getElementById('light');
     div.style.display = 'none';
     document.getElementById('fade').style.display = 'none';
-    var qf = document.getElementById("qframe");
-    div.removeChild(qf)
+    div.innerHTML = '';
+    document.body.style.overflow = 'auto';
   }
 
 
@@ -25,6 +25,7 @@
     div.appendChild(frame)
     document.getElementById('light').style.display = 'block';
     document.getElementById('fade').style.display = 'block';
+    document.body.style.overflow = 'hidden';
   }
 
 
@@ -87,6 +88,15 @@
     div2.onclick = closeDiv;
     document.body.appendChild(div2);
     var divhtml = '<div id="light" class="white_content"><a href = "javascript:void(0)" onclick = "closeDiv()"></a></div><div id="fade" class="black_overlay" onclick = "closeDiv()"></div>';
+    
+    
+    var closeBtn = document.createElement('a');
+    closeBtn.innerHTML = '&times;';
+    closeBtn.className = 'qframe-close-btn';
+    closeBtn.setAttribute('href', '#');
+    closeBtn.addEventListener('click', closeDiv);
+
+    div2.appendChild(closeBtn);
   }
 
   scanLinks();
