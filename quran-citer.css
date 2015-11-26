@@ -43,6 +43,17 @@
   overflow: hidden;
 }
 
+.qframe-close-btn {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 22px;
+    position: absolute;
+    left: 75%;
+    top: 22%;
+    font-weight: bold;
+    font-family: Helvetica, Arial,sans-serif;
+}
+
 @media screen and (max-width: 764px) {
     .white_content {
       top: 15%;
@@ -51,5 +62,11 @@
       height: 60%;
       border: 1px solid orange;
     }
-}
 
+    .qframe-close-btn {
+        top: 1%;
+        right: 5px;
+        left: auto;
+        font-size: 37px;
+    }
+}
