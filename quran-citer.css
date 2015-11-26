@@ -42,3 +42,14 @@
   z-index: 1002;
   overflow: hidden;
 }
+
+@media screen and (max-width: 764px) {
+    .white_content {
+      top: 15%;
+      left: 1%;
+      width: 98%;
+      height: 60%;
+      border: 1px solid orange;
+    }
+}
+
