@@ -20,7 +20,7 @@
     frame.padding = 0;
     frame.border = 0;
     frame.style = "overflow:hidden;height:100%;width:100%";
-    frame.frameborder = 0;
+    frame.setAttribute('frameborder', 0);
     var div = document.getElementById("light");
     div.appendChild(frame)
     document.getElementById('light').style.display = 'block';
