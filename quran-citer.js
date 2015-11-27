@@ -99,19 +99,20 @@
     div2.appendChild(closeBtn);
   }
 
-  function callMe(){
+  /*function callMe(){
 	 console.log(this);
 	 return "hello";
-  }
+  }*/
   
   function initialise(){
-	$(document).ready(function() {
-//		 console.log("LA ILAHE ILLELLAH");
+/*	$(document).ready(function() {
+		 console.log("LA ILAHE ILLELLAH");
 		$('.qrciter-popup-link').magnificPopup({
 			type: 'inline',
 			src: '<div>HTML string</div>'
 		});
 	});
+*/	
 	scanLinks();
 	createDivs();
   }
