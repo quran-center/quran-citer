@@ -106,7 +106,7 @@
   
   function initialise(){
 	$(document).ready(function() {
-		 console.log("LA ILAHE ILLELLAH");
+//		 console.log("LA ILAHE ILLELLAH");
 		$('.qrciter-popup-link').magnificPopup({
 			type: 'inline',
 			src: '<div>HTML string</div>'
