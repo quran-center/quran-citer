@@ -22,7 +22,7 @@
     frame.style = "overflow:hidden;height:100%;width:100%";
     frame.setAttribute('frameborder', 0);
     var div = document.getElementById("light");
-    div.appendChild(frame)
+    div.appendChild(frame);
     document.getElementById('light').style.display = 'block';
     document.getElementById('fade').style.display = 'block';
     document.body.style.overflow = 'hidden';
@@ -63,12 +63,12 @@
           y.cite = link.href;
         } else {
           link.href = "#";
-          var p1 = nums[0],
-            p2 = nums[1],
-            p3 = nums.length > 2 ? nums[2] : nums[1];
-          link.onclick = function() {
-            putScriptInIframes(p1, p2, p3);
-          }
+          var sid = nums[0],
+            aid = nums[1],
+            eid = nums.length > 2 ? nums[2] : nums[1];
+          link.onclick = putScriptInIframes.bind(this,sid, aid, eid);
+		 //  link.href = 'http://www.recitequran.com/embed.php?ColorText=1&wpx=560&Translations=VRussian&Ch=' + sid + '&SV=' + aid + '&EV=' + (eid || aid);
+		  // link.classList.add("qrciter-popup-link");
         }
 
       }
@@ -99,7 +99,23 @@
     div2.appendChild(closeBtn);
   }
 
-  scanLinks();
-  createDivs();
+  function callMe(){
+	 console.log(this);
+	 return "hello";
+  }
+  
+  function initialise(){
+	$(document).ready(function() {
+		 console.log("LA ILAHE ILLELLAH");
+		$('.qrciter-popup-link').magnificPopup({
+			type: 'inline',
+			src: '<div>HTML string</div>'
+		});
+	});
+	scanLinks();
+	createDivs();
+  }
+  
+  initialise();
 
 }("rq"))
