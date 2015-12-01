@@ -62,7 +62,7 @@
           link.target = "_blank";
           y.cite = link.href;
         } else {
-          link.href = "#";
+          link.href =  "javascript:void(0)";
           var sid = nums[0],
             aid = nums[1],
             eid = nums.length > 2 ? nums[2] : nums[1];
