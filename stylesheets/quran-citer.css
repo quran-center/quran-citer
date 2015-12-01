@@ -17,7 +17,7 @@
 
 .black_overlay {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
   width: 100%;
@@ -31,7 +31,7 @@
 
 .white_content {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 25%;
   left: 25%;
   width: 50%;
@@ -47,7 +47,7 @@
     color: #FFF;
     text-decoration: none;
     font-size: 22px;
-    position: absolute;
+    position: fixed;
     left: 75%;
     top: 22%;
     font-weight: bold;
