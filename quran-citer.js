@@ -1,4 +1,4 @@
-var qrCiter= (function(style) {
+var qrnCiter= (function(style) {
 	
   var res = {};
   
