@@ -1,4 +1,7 @@
-(function(style) {
+var qrCiter= (function(style) {
+	
+  var res = {};
+  
   function closeDiv() {
     var div = document.getElementById('light');
     div.style.display = 'none';
@@ -104,7 +107,7 @@
 	 return "hello";
   }*/
   
-  function initialise(){
+  res.initialise= function (){
 /*	$(document).ready(function() {
 		 console.log("LA ILAHE ILLELLAH");
 		$('.qrciter-popup-link').magnificPopup({
@@ -117,6 +120,8 @@
 	createDivs();
   }
   
-  initialise();
+  res.initialise();
+  
+  return res;
 
 }("rq"))
