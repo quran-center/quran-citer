@@ -1,3 +1,7 @@
+q.qrn::before {
+    content: no-close-quote;
+}
+
 .qrn {
   color: green;
   text-emphasis-style: dot;

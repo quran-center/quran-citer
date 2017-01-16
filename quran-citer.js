@@ -1,7 +1,7 @@
-var qrnCiter= (function(style) {
-	
+var qrnCiter = (function (style) {
+
   var res = {};
-  
+
   function closeDiv() {
     var div = document.getElementById('light');
     div.style.display = 'none';
@@ -65,13 +65,13 @@ var qrnCiter= (function(style) {
           link.target = "_blank";
           y.cite = link.href;
         } else {
-          link.href =  "javascript:void(0)";
+          link.href = "javascript:void(0)";
           var sid = nums[0],
             aid = nums[1],
             eid = nums.length > 2 ? nums[2] : nums[1];
-          link.onclick = putScriptInIframes.bind(this,sid, aid, eid);
-		 //  link.href = 'http://www.recitequran.com/embed.php?ColorText=1&wpx=560&Translations=VRussian&Ch=' + sid + '&SV=' + aid + '&EV=' + (eid || aid);
-		  // link.classList.add("qrciter-popup-link");
+          link.onclick = putScriptInIframes.bind(this, sid, aid, eid);
+          //  link.href = 'http://www.recitequran.com/embed.php?ColorText=1&wpx=560&Translations=VRussian&Ch=' + sid + '&SV=' + aid + '&EV=' + (eid || aid);
+          // link.classList.add("qrciter-popup-link");
         }
 
       }
@@ -91,8 +91,8 @@ var qrnCiter= (function(style) {
     div2.onclick = closeDiv;
     document.body.appendChild(div2);
     var divhtml = '<div id="light" class="white_content"><a href = "javascript:void(0)" onclick = "closeDiv()"></a></div><div id="fade" class="black_overlay" onclick = "closeDiv()"></div>';
-    
-    
+
+
     var closeBtn = document.createElement('a');
     closeBtn.innerHTML = '&times;';
     closeBtn.className = 'qframe-close-btn';
@@ -106,22 +106,22 @@ var qrnCiter= (function(style) {
 	 console.log(this);
 	 return "hello";
   }*/
-  
-  res.initialise= function (){
-/*	$(document).ready(function() {
-		 console.log("LA ILAHE ILLELLAH");
-		$('.qrciter-popup-link').magnificPopup({
-			type: 'inline',
-			src: '<div>HTML string</div>'
-		});
-	});
-*/	
-	scanLinks();
-	createDivs();
+
+  res.initialise = function () {
+    /*	$(document).ready(function() {
+    		 console.log("LA ILAHE ILLELLAH");
+    		$('.qrciter-popup-link').magnificPopup({
+    			type: 'inline',
+    			src: '<div>HTML string</div>'
+    		});
+    	});
+    */
+    scanLinks();
+    createDivs();
   }
-  
+
   res.initialise();
-  
+
   return res;
 
 }("rq"))
