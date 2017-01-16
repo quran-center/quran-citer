@@ -6,8 +6,7 @@
   <title>Quran-citer by husayt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'
-  type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/quran-citer.css" media="screen">
@@ -29,71 +28,52 @@
     <a href="https://github.com/husayt/quran-citer/zipball/master" class="btn">Download .zip</a>
     <a href="https://github.com/husayt/quran-citer/tarball/master" class="btn">Download .tar.gz</a>
   </section>
-
   <section class="main-content">
     <h1>
       <a id="quran-citer" class="anchor" href="#quran-citer" aria-hidden="true">
         <span class="octicon octicon-link"></span>
       </a>quran-citer</h1>
-
-    <p>This project allows to easily create simple links to Quran ayas on popular Quran
-      websites.
+    <p>This project allows to easily create simple links to Quran ayas on popular Quran websites.
     </p>
-
     <p>Usage is very simple : First, add this line to the bottom of your page</p>
-
     <pre>
       <code>&lt;script src="quran-citer.js" &gt;&lt;/script&gt;
       </code>
     </pre>
-
     <p>Then, just add any Quran surah either in
       <code>blockquote</code> or
       <code>q</code> tags.</p>
-
     <p>For example, for block mode quote use</p>
-
     <pre>
       <code>&lt;blockquote class="qrn"&gt; Thereby He causes many to go astray, and thereby
-        He guides many; but thereby He causes none to go astray save the iniquitous}
+        He guides many; but thereby He causes none to go astray save the iniquitous
         &lt;a&gt;(Al-Baqarah 2:26)&lt;/a&gt; &lt;/blockquote&gt;
       </code>
     </pre>
-
     <blockquote class="qrn">
-      Thereby He causes many to go astray, and thereby He guides many; but thereby He causes
-      none to go astray save the iniquitous} <a>(Al-Baqarah 2:26)</a>
+      Thereby He causes many to go astray, and thereby He guides many; but thereby He causes none to go astray save the iniquitous
+      <a>(Al-Baqarah 2:26)</a>
     </blockquote>
-
     <p>or for inline</p>
-
     <pre>
       <code>Всевышний сказал: &lt;q class="qrn"&gt; «Я отвращу от Моих знамений тех, которые
         возгордились на земле без всякого права на то. Какое бы знамение они ни увидели,
         они не уверуют. Увидев правый путь, они не встанут на него, а завидев путь
         заблуждения, последуют им» &lt;a&gt;(сура 7 «Ограды», аят 146)&lt;/a&gt;.&lt;/q&gt;
       </code>
-    </pre>
-
-    It will look like this:
-
+    </pre> It will look like this:
     <p>Всевышний сказал:
       <q class="qrn">«Я отвращу от Моих знамений тех, которые возгордились на земле без всякого
         права на то. Какое бы знамение они ни увидели, они не уверуют. Увидев правый
         путь, они не встанут на него, а завидев путь заблуждения, последуют им» <a>(сура 7 «Ограды», аят 146)</a></q>.</p>
-
     <p>If you want to use some other quran website use
-      <code>data-qlink</code> attribute. Example below will use tanzil.info project instead
-      of default recitequran.com</p>
-
+      <code>data-qlink</code> attribute. Example below will use tanzil.info project instead of default recitequran.com</p>
     <blockquote class="qrn" data-qlink="tanzil">
-      Thereby He causes many to go astray, and thereby He guides many; but thereby He causes
-      none to go astray save the iniquitous} <a>(Al-Baqarah 2:26)</a>
+      Thereby He causes many to go astray, and thereby He guides many; but thereby He causes none to go astray save the iniquitous}
+      <a>(Al-Baqarah 2:26)</a>
     </blockquote>
-
     <p>Currently, these values are for
       <code>data-qlink</code> parameter supported</p>
-
     <ul>
       <li>
         <code>rq</code> : <a href="http://www.recitequran.com">http://www.recitequran.com</a>
@@ -125,25 +105,18 @@
       <li>
         <code>quraz3</code>: <a href="http://quran.az">http://quran.az - Эльмир Кулиев</a>
       </li>
-
       <li>
         <code>rqs</code>: Special inline mode for recitequran.com (see below)
       </li>
     </ul>
-
     <h3>Inline mode</h3>
-
-
     Всевышний Аллах сказал:
-    <blockquote class="qrn" data-qlink="rqs"> «Возвести людям о хадже, и они будут прибывать к тебе пешком и на всех поджарых
-      верблюдах с самых отдалённых дорог. Пусть они застанут то, что приносит им
-      пользу [в том числе прощение грехов и награду от Всевышнего], и поминают имя
-      Аллаха в установленные дни над [жертвенной] скотиной, которой Он наделил их.
-      Ешьте от них и кормите несчастного бедняка! Затем пусть [паломники] завершат
-      свои обряды, исполнят свои обеты и обойдут вокруг древнего Дома. Вот так! Кто
-      почитает святыни Аллаха, тот поступает во благо себе перед своим Господом»
+    <blockquote class="qrn" data-qlink="rqs"> «Возвести людям о хадже, и они будут прибывать к тебе пешком и на всех поджарых верблюдах с самых отдалённых дорог. Пусть
+      они застанут то, что приносит им пользу [в том числе прощение грехов и награду от Всевышнего], и поминают имя Аллаха
+      в установленные дни над [жертвенной] скотиной, которой Он наделил их. Ешьте от них и кормите несчастного бедняка! Затем
+      пусть [паломники] завершат свои обряды, исполнят свои обеты и обойдут вокруг древнего Дома. Вот так! Кто почитает святыни
+      Аллаха, тот поступает во благо себе перед своим Господом»
       <a>(сура 22 «Хадж», аяты 27-30).</a></blockquote>
-
     <h3>Roadmap</h3>
     <ul>
       <li>
@@ -151,36 +124,26 @@
       </li>
     </ul>
     <h3>Links &amp; samples</h3>
-
     <ul>
       <li>
         <a href="samples/sample.html">sample demo</a>
       </li>
-	  
-	  <li>
+      <li>
         <a href="samples/musulmanin.html">sample article from e-minbar.com with iframe links</a>
       </li>
-	  
-	  <li>	  
+      <li>
         <a href="samples/musulmanin-alt.html">the same article from e-minbar.com with direct links</a>
       </li>
-	  
-
       <li>
         <a href="samples/simple.html">simple demo</a>
       </li>
     </ul>
-
     <footer class="site-footer">
       <span class="site-footer-owner"><a href="https://github.com/husayt/quran-citer">Quran-citer</a> is maintained
         by <a href="https://github.com/husayt">husayt</a>.</span>
-
       <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>        using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a>        by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
     </footer>
-
   </section>
-
-
 </body>
 <script src="quran-citer.min.js"></script>
 
