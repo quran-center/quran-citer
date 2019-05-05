@@ -36,6 +36,7 @@ var qrnCiter = (function (style) {
 
     var
       linkFormats = {
+        "kc": ["https://www.koran.center/", "#", ""],
         "rq": ["http://www.recitequran.com/", ":", ""],
         "rqru": ["http://www.recitequran.com/ru/", ":", ""],
         "rqaz": ["http://www.recitequran.com/az/", ":", ""],
@@ -124,4 +125,4 @@ var qrnCiter = (function (style) {
 
   return res;
 
-}("rq"))
+}("kc"))

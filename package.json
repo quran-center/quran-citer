@@ -1,0 +1,12 @@
+{
+  "name": "QuranCiter",
+  "version": "1.0.1",
+  "description": "quran links",
+  "scripts": {
+    "build": "uglifyjs quran-citer.js -o quran-citer.min.js --compress --mangle"
+  },
+
+  "devDependencies": {
+     "uglify-js": "latest"
+  }
+}

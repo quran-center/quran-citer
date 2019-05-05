@@ -39,14 +39,16 @@ or for inline
 
 if you want to use some other quran website use `qlink` attribute.
 
-
+```
 <blockquote class="qrn" qlink="tanzil">
   Thereby He causes many to go astray, and thereby He guides many; but thereby He
   causes none to go astray save the iniquitous} <a>(Al-Baqarah 2:26)</a>
 </blockquote>
+```
 
 Currently, these parameters supported
 
+* `kc` : https://www.koran.center
 * `rq` : http://www.recitequran.com
 * `tanzil`: http://tanzil.net
 * `quran`: http://quran.com
