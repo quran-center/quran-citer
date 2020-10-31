@@ -3,10 +3,16 @@
   "version": "1.0.1",
   "description": "quran links",
   "scripts": {
-    "build": "uglifyjs quran-citer.js -o quran-citer.min.js --compress --mangle"
+    "minifycss": "csso   quran-citer.css -o quran-citer.min.css",
+    "build": "yarn uglify&&yarn minifycss",
+    "uglify": "uglifyjs quran-citer.js -o quran-citer.min.js --compress --mangle",
+    "terser": "terser quran-citer.js -o quran-citer.min.js --compress --mangle"
   },
-
   "devDependencies": {
-     "uglify-js": "latest"
+    "csso-cli": "^3.0.0",
+    "terser": "^5.3.8",
+    "uglify-js": "^3.11.4"
+  },
+  "dependencies": {
   }
 }

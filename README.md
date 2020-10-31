@@ -6,11 +6,11 @@ This project allows to easily create simple links to Quran ayas on popular Quran
 Usage is very simple :
 First, add this line to the `<head>` area  of your page 
 ```
-<link rel="stylesheet" type="text/css" href="quran-citer.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/quran-center/quran-citer/quran-citer.min.css">
 ```
 and this to the bottom 
 ```
-<script src="quran-citer.js" ></script>
+<script src="https://cdn.jsdelivr.net/gh/quran-center/quran-citer/quran-citer.min.js" ></script>
 ```
 
 Then, just add any Quran surah either in `blockquote` or `q` tags.
