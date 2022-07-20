@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "csso-cli": "^3.0.0",
-    "terser": "^5.3.8",
+    "terser": "^5.14.2",
     "uglify-js": "^3.11.4"
   },
   "dependencies": {
